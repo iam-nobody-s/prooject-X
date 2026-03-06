@@ -4,7 +4,7 @@ A simple personal AI chat program you can run in your terminal.
 
 ## Setup
 
-1. Install dependencies:
+1. Install dependency:
 
    ```bash
    pip install openai
@@ -16,7 +16,7 @@ A simple personal AI chat program you can run in your terminal.
    export OPENAI_API_KEY="your_key_here"
    ```
 
-3. Run:
+3. Run interactive chat:
 
    ```bash
    python personal_ai.py
@@ -25,6 +25,12 @@ A simple personal AI chat program you can run in your terminal.
 ## Useful options
 
 - `--model gpt-4.1-mini` (default)
-- `--system-prompt "..."` to customize behavior
+- `--system-prompt "..."` to customize assistant behavior
 - `--history-file /path/to/history.json` to change memory location
 - `--no-memory` to disable saving chat history
+- `--once "draft an email"` to run one prompt and exit
+
+## In-chat commands
+
+- `/clear` clears saved memory for the current history file
+- `exit` or `quit` closes the program
